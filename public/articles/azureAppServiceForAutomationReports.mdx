@@ -1,0 +1,93 @@
+---
+title: Azure App Service for Automation Reports
+---
+
+# Agenda
+
+1. Problem Statement
+2. Solution Overview
+3. Stages:
+   - Stage 1: Create Azure App
+   - Stage 2: Upload The Reports
+   - Stage 3: Prepare to Send Email
+   - Stage 4: View The Test Results
+   - Stage 5: Secure Your App Service
+   - Stage 6: Maintain Your App Service Disk Space
+
+---
+
+## Problem Statement
+
+Ensuring efficient and timely delivery of automation reports to stakeholders to facilitate informed decision-making and enable effective collaboration.
+
+---
+
+## Solution Overview
+
+The solution is structured in multiple stages:
+
+### Stage 1: Create Azure App
+
+
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide5.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide6.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide7.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide8.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide9.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide10.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide11.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide12.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide13.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide14.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide15.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide16.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide17.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide18.png?raw=true)
+
+### Stage 2: Upload The Reports
+
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide19.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide20.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide21.png?raw=true)
+
+### Stage 3: Prepare to Send Email
+
+Set up email automation with the following SMTP configuration:
+
+Download below zip file and open in vs code
+![image](../../static/EmailGenerator.zip)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide23.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide24.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide25.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide26.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide27.png?raw=true)
+```bash
+smtp-util --sender:email@yourDomain.com --toList:emailid1;emailid2 --subject:Automation_TestReport --htmlFile:C:\\Automation\\API\\src\\main\\java\\Utilities\\AllureReportGenerator\\emailReport.html --displayName:K_Fleet_Desktop Automation Results --attachments: C:\\Automation\\API\\src\\main\\java\\Utilities\\AllureReportGenerator\\emailReport.html --port:YOUR_SMTP_PORT --host:YOUR_SMTP_HOST --userID:YOUR_SMTP_USERNAME--password:YOUR_SMTP_PASSWORD
+```
+once we run above command we should see some success log like below
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide29.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide30.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide31.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide32.png?raw=true)
+
+### Stage 5 – Secure Your App Service
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide35.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide36.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide37.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide38.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide39.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide40.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide41.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide42.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide43.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide44.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide45.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide46.png?raw=true)
+
+### Stage  6– Maintain Your App Service Disk Space
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide48.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide49.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide50.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide51.png?raw=true)
+![image](https://github.com/bhargavmurari7/blog/blob/main/docs/Articles/Images/AzureAppService/Slide52.png?raw=true)
+![image](../../static/AppServiceCleaner.zip)
